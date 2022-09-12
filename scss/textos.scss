@@ -1,0 +1,40 @@
+@mixin tituloGrande{
+    font-family: 'Merienda One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: $color-textos;
+}
+
+@mixin titulo{
+    font-family: 'Merienda One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: $color-textos;
+}
+
+@mixin subTitulo{
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: $color-textos;
+}
+
+
+@mixin texto01{
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: $color-textos;
+}
+
+@mixin texto02{
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: $color-textos;
+}
