@@ -9,12 +9,17 @@ function menuOpen() {
     }
 }
 var swiper = new Swiper(".mySwiper", {
-    cssMode: true,
+    effect: "fade",
+    loop: true,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    mousewheel: true,
+    mousewheel: false,
     keyboard: true,
   });
   var swiper = new Swiper(".conteudoDestaque", {
@@ -27,7 +32,7 @@ var swiper = new Swiper(".mySwiper", {
     breakpoints: {
         "@0.00": {
           slidesPerView: 1,
-          spaceBetween: 10,
+          spaceBetween: 100,
         },
         "@0.75": {
           slidesPerView: 2,
@@ -45,6 +50,11 @@ var swiper = new Swiper(".mySwiper", {
   });
   var swiper = new Swiper(".conteudoDepoimento", {
     spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,

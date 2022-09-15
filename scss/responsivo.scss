@@ -1,6 +1,6 @@
 @media (max-width: 920px) {
     .inner-width{
-        width: 80%;
+        width: 80% !important;
     }
     .topo{
         display: flex; 
@@ -10,7 +10,7 @@
                 i{
                     color: black;
                     cursor: pointer;
-                    display: block;
+                    display: block !important;
                 }
             }
             .logo{
@@ -18,14 +18,18 @@
             }
             ul{
                 position: fixed;
-                top: 80px;
-                left: -100%;
-                background-color: blueviolet;
+                top: 55px;
+                right: -100%;
+                background-color: $color-branco;
                 height: 100vh;
                 width: 100%;
                 text-align: center;
                 display: block;
                 transition: all 0.3s ease;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
                 li{
                     width: 100%;
                     margin: 50px 0; 
@@ -39,7 +43,7 @@
                 }
             }
             ul.open{
-                left: 0;
+                right: 0;
             }
         }
     }
@@ -54,7 +58,7 @@
         }
     }
     .sobre {
-        margin-top: -30px;
+        margin-top: 0;
         width: 100%;
         height: 700px;
         background: url(../assets/img/fundoSobre.png) no-repeat;
@@ -110,5 +114,181 @@
         margin-bottom: 50px;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+}
+@media (max-width: 320px){
+    .inner-width {
+        width: 90% !important;
+    }
+    body{
+        .topo{
+            nav{
+                height: 60px;
+                .menu-btn{
+                    margin-left: auto;
+                }
+            }
+        }
+        .banner{
+            height: 650px;
+        }
+        .destaque{
+            .inner-width{
+                .titulo{
+                    img{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .sobre {
+            margin-top: -15px;
+            width: 100%;
+            height: 700px;
+            background: url(../assets/img/fundoSobre.png) no-repeat;
+            background-size: cover;
+            .inner-width{
+                h2{
+                    padding: 170px 10px 15px 10px;
+                }
+            }
+        }
+        #fimSobre {
+            margin-top: -13px !important;
+            position: absolute;
+        }
+        .galeria{
+            height: auto;
+            .inner-width{
+                .titulo{
+                    img{
+                        display: none;
+                    }
+                }
+                .divImg{
+                    margin: 0;
+                    .galeriaImg {
+                        height: 250px;
+                        width: 250px;
+                        border-radius: 30px;
+                        margin-bottom: 60px;
+                    }
+                }
+            }
+        }
+        .info{
+            height: auto;
+            margin-top: -17px;
+        }
+        #fimInfo{
+            margin-top: -10px !important;
+            position: absolute;
+        }
+        .app{
+            height: auto;
+            .inner-width{
+                .conteudoApp{
+                    div{
+                        width: 260px;
+                        h2{
+                            text-align: center;
+                        }
+                        p{
+                            text-align: center;
+                        }
+                    }
+                    div:nth-child(2){
+                        display: none;
+                    }
+                }
+            }
+        }
+        .depoimento{
+            height: auto;
+            margin-top: -15px;
+            padding-bottom: 30px;
+            .inner-width{
+                .titulo{
+                    padding-top: 80px;
+                }
+                .conteudoDepoimento{
+                    .swiper-wrapper{
+                        margin-bottom: 40px;
+                        .swiper-slide{
+                            p{
+                                padding-top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #fimDepoimento{
+            margin-top: -10px !important;
+            position: absolute;
+        }
+        #fimKits{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .newsletter{
+            .inner-width{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                div{
+                    margin-bottom: 30px;
+                }
+                .emailBox:hover > .tbox,.tbox:focus{
+                    width: 121px;
+                    padding: 0 10px;
+                    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+        .rodape{
+            height: auto;
+            .inner-width{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                div{
+                    margin-top: 10px;
+                    margin-bottom: 25px;
+                }
+                .rodapeContato{
+                    width: 100%;
+                    p{
+                        font-size: 20px;
+                    }
+                    div{
+                        width: 100%;
+                        justify-content: space-evenly;
+                        a{
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                }
+                .rodapeLogo{
+                    width: 268px;
+                    height: 268px;
+                    img{
+                        width: 268px;
+                        height: 268px;
+                    }
+                }
+                .rodapeLinks{
+                    width: auto;
+                }
+            }
+        }
+        .direitos{
+            height: auto;
+            font-size: 17px;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
     }
 }

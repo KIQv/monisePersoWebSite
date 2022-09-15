@@ -1,5 +1,13 @@
 body{
     overflow-x: hidden;
+    .swiper-pagination-bullet{
+        height: 12px;
+        width: 12px;
+    }
+    .swiper-pagination-bullet-active {
+        opacity: var(--swiper-pagination-bullet-opacity, 1);
+        background: $color-clara;
+    }
     .inner-width{
         max-width: 1280px;
         width: 1200px;
@@ -15,6 +23,7 @@ body{
             align-items: center;
             justify-content: center;
             align-content: center;
+            z-index: 9999;
             .logo{
                 width: 220px;
                 height: 220px;
@@ -24,7 +33,7 @@ body{
                 position: absolute;
             }
             ul{
-                width: 80%;
+                width: 100%;
                 list-style: none;
                 li{
                     margin: 0 35px;
@@ -63,7 +72,7 @@ body{
         width: 100%;
         height: 850px;
         background: black;
-        z-index: -1;
+        position: relative;
         .swiper-wrapper{
             overflow-y: hidden;
             overflow-x: hidden;
@@ -72,6 +81,10 @@ body{
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+        .swiper-button-next,
+        .swiper-button-prev{
+            color: $color-clara
         }
     }
     #fimBanner{
@@ -143,7 +156,7 @@ body{
         width: 100%;
         height: 700px;
         background: url(../assets/img/fundoSobre.png) no-repeat;
-        background-size: 100% 100%;
+        object-fit: cover;
         .inner-width{
             color: white;
             margin: auto;
@@ -222,7 +235,7 @@ body{
         display: flex;
         justify-content: center;
         background: url(../assets/img/fundoInfo.png);
-        background-size: 100% 100%;
+        background-size: cover;
         margin-top: -90px;
         .inner-width{
             display: flex;
@@ -305,7 +318,7 @@ body{
         width: 100%;
         height: 700px;
         background: url(../assets/img/fundoDepoimento.png) no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
         .inner-width{
             margin: auto;
             position: relative;
@@ -360,6 +373,7 @@ body{
         justify-content: center;
         padding: 20px 0;
         .inner-width{
+            overflow: hidden;
             .titulo{
                 display: flex;
                 justify-content: center;
@@ -529,7 +543,7 @@ body{
             justify-content: space-between;
         }
         .rodapeContato{
-            width: auto;
+            width: 28%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -559,26 +573,35 @@ body{
                 }
             }
         }
-        .rodapeLogo{
-            width: auto;
-            height: 400px;
+        .rodapeLinks{
+            width: 20%;
             display: flex;
-            justify-content: center;
-            align-content: center;
-        }
-        .rodapeGaleria{
-            width: auto;
+            flex-direction: column;
+            align-items: center;
             h3{
                 @include titulo;
                 color: $color-branco;
                 text-align: center;
                 margin-bottom: 20px;
             }
-            div{
-                img{
-                    margin: 5px;
+            p{
+                @include subTitulo;
+                color: $color-branco;
+                text-align: center;
+                text-decoration: none;
+                margin-bottom: 20px;
+                a{
+                    text-decoration: none;  
+                    color: $color-branco;
                 }
             }
+        }
+        .rodapeLogo{
+            width: auto;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
         }
     }
     .direitos{
