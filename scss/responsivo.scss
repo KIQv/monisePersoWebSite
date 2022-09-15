@@ -2,43 +2,52 @@
     .inner-width{
         width: 80%;
     }
-    nav .logo{
-        display: none;
-    }
-    nav .menu-btn i{
-        display: block;
-    }
-    nav ul{
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        background-color: blueviolet;
-        height: 100vh;
-        width: 100%;
-        text-align: center;
-        display: block;
-        transition: all 0.3s ease;
-    }
-    nav ul.open{
-        left: 0;
-    }
-    nav ul li{
-        width: 100%;
-        margin: 50px 0; 
-    }
-    nav ul li a{
-        font-size: clamp(.5em, 1em, 1.5em);
-    }
-    nav ul li a.ativo,
-    nav ul li a:hover{
-    color: aqua;
+    .topo{
+        display: flex; 
+        justify-content: center;
+        nav{
+            .menu-btn{
+                i{
+                    color: black;
+                    cursor: pointer;
+                    display: block;
+                }
+            }
+            .logo{
+                display: none;
+            }
+            ul{
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                background-color: blueviolet;
+                height: 100vh;
+                width: 100%;
+                text-align: center;
+                display: block;
+                transition: all 0.3s ease;
+                li{
+                    width: 100%;
+                    margin: 50px 0; 
+                    a{
+                        font-size: clamp(.5em, 1em, 1.5em);
+                    }
+                    a.ativo,
+                    a:hover{
+                        color: aqua;
+                    }
+                }
+            }
+            ul.open{
+                left: 0;
+            }
+        }
     }
     .banner{
         width: 100%;
         height: 850px;
         background: black;
         z-index: -1;
-    
         img{
             width: 100%;
             height: 100%;
