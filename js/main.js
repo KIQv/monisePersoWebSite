@@ -25,3 +25,10 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
+  var swiper = new Swiper(".conteudoDepoimento", {
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });

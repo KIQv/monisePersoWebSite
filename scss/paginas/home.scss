@@ -358,6 +358,7 @@
     .inner-width{
         margin: auto;
         position: relative;
+        overflow: hidden;
         .titulo{
             display: flex;
             justify-content: center;
@@ -374,20 +375,26 @@
                 margin: 0 30px;
             }
         }
-
-        p{
-            @include texto01;
-            color: $color-branco;
-            text-align: center;
-            padding-top: 65px;
-            padding-bottom: 65px;
-        }
-        h4{
-            @include texto01;
-            color: $color-branco;
-            text-align: center;
-            padding-top: 15px;
-            padding-bottom: 15px;
+        .conteudoDepoimento{
+            .swiper-wrapper{
+                margin-bottom: 100px;
+                .swiper-slide{
+                    p{
+                        @include texto01;
+                        color: $color-branco;
+                        text-align: center;
+                        padding-top: 65px;
+                        padding-bottom: 65px;
+                    }
+                    h4{
+                        @include texto01;
+                        color: $color-branco;
+                        text-align: center;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                    }
+                }
+            }
         }
     }
 }
