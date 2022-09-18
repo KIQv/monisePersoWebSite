@@ -9,7 +9,7 @@ function pegarUrl(url){
   request.send()
   return request.responseText
 }
-let data = pegarUrl("#");
+let data = pegarUrl("https://monisepersonalizados.online/admin/lista-produto.php");
 let produtos = JSON.parse(data);
 
 $(document).ready(function(e){
@@ -27,7 +27,7 @@ function loadProducts(data){
   else div.className += " swiper-slide";
 
   div.innerHTML = '<div class="doces swiper-slide">'+
-                        '<img src="assets/img/doce01.png" alt="Doces Monise Personalizados"/>'+
+                        '<img src="../admin/'+data.fotoProduto1+'" alt="Doces Monise Personalizados"/>'+
                         '<h3>'+data.nomeProduto+'</h3>'+
                         '<p>'+data.descProduto+'</p>'+
                     '</div>';

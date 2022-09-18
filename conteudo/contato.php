@@ -10,11 +10,13 @@
         <div class="contatoForm">
             <h4>Envie uma mensagem</h4>
             <form action="email.php" method="post">
-                <label>Nome</label>
+                <label for="nome">Nome</label>
                 <input type="text" name="nome" placeholder="Digite seu nome" autocomplete="off" required>
-                <label>Email</label>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="tel" maxlength="14" placeholder="(11) 99999-9999" required>
+                <label for="email">Email</label>
                 <input type="email" name="email" placeholder="monisepersonalizados@gmail.com" autocomplete="off" required>
-                <label>Mensagem</label>
+                <label for="mensagem">Mensagem</label>
                 <textarea name="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
                 <button class="btnForm" type="submit" value="ENVIAR">Enviar</button>
             </form>
