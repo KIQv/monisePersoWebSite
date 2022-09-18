@@ -141,6 +141,9 @@ body {
           }
           p {
             width: 270px;
+            max-height: 33px;
+            text-overflow: ellipsis;
+            overflow: hidden;
             @include texto02;
             margin: 0;
           }

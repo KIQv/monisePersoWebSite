@@ -1,6 +1,41 @@
 var ul = document.querySelector("nav ul");
 var menuBtn = document.querySelector(".menu-btn i");
 
+/////////////////////////////////////////////////////////////////////////////
+/* VITRINE DE PRODUTOS */
+function pegarUrl(url){
+  let request = new XMLHttpRequest()
+  request.open("GET", url, false)
+  request.send()
+  return request.responseText
+}
+let data = pegarUrl("https://monisepersonalizados.000webhostapp.com/admin/lista-produto.php");
+let produtos = JSON.parse(data);
+
+$(document).ready(function(e){
+
+  produtos.forEach((i)=>loadProducts(i));
+
+
+});
+console.log(produtos)
+function loadProducts(data){
+
+  var div = document.createElement('div');
+  
+  if (div.classList) div.classList.add("swiper-slide");
+  else div.className += " swiper-slide";
+
+  div.innerHTML = '<div class="doces swiper-slide">'+
+                        '<img src="assets/img/doce01.png" alt="Doces Monise Personalizados"/>'+
+                        '<h3>'+data.nomeProduto+'</h3>'+
+                        '<p>'+data.descProduto+'</p>'+
+                    '</div>';
+document.getElementById("docesVitrine").appendChild(div);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+
 function menuOpen() {
   if (ul.classList.contains("open")) {
     ul.classList.remove("open");
