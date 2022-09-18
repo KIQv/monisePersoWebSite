@@ -27,7 +27,7 @@ function loadProducts(data){
   else div.className += " swiper-slide";
 
   div.innerHTML = '<div class="doces swiper-slide">'+
-                        '<img src="../admin/'+data.fotoProduto1+'" alt="Doces Monise Personalizados"/>'+
+                        '<img src="https://monisepersonalizados.online/admin/'+data.fotoProduto1+'" alt="Doces Monise Personalizados"/>'+
                         '<h3>'+data.nomeProduto+'</h3>'+
                         '<p>'+data.descProduto+'</p>'+
                     '</div>';
