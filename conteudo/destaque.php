@@ -7,52 +7,8 @@
         </div>
         <p>Os melhores doces para a sua festa!</p>
         <div class="conteudoDestaque">
-        <div class="swiper-wrapper">
-            <div class="doces swiper-slide">
-            <img src="assets/img/doce01.png" alt="Doces Monise Personalizados" />
-            <h3>Doce 01</h3>
-            <p>Lorem ipsum dolor amet, consetec adipiscing elit. magna</p>
-            </div>
-            <div class="doces swiper-slide">
-            <img src="assets/img/doce01.png" alt="Doces Monise Personalizados" />
-            <h3>Doce 02</h3>
-            <p>Lorem ipsum dolor amet, consetec adipiscing elit. magna</p>
-            </div>
-            <div class="doces swiper-slide">
-            <img src="assets/img/doce01.png" alt="Doces Monise Personalizados" />
-            <h3>Doce 03</h3>
-            <p>Lorem ipsum dolor amet, consetec adipiscing elit. magna</p>
-            </div>
-            <div class="doces swiper-slide">
-            <img src="assets/img/doce01.png" alt="Doces Monise Personalizados" />
-            <h3>Doce 03</h3>
-            <p>Lorem ipsum dolor amet, consetec adipiscing elit. magna</p>
-            </div>
-            <div class="doces swiper-slide">
-            <img src="assets/img/doce01.png" alt="Doces Monise Personalizados" />
-            <h3>Doce 03</h3>
-            <p>Lorem ipsum dolor amet, consetec adipiscing elit. magna</p>
-            </div>
-            <div class="doces swiper-slide">
-            <img src="assets/img/doce01.png" alt="Doces Monise Personalizados" />
-            <h3>Doce 03</h3>
-            <p>Lorem ipsum dolor amet, consetec adipiscing elit. magna</p>
-            </div>
-            <div class="doces swiper-slide">
-            <img src="assets/img/doce01.png" alt="Doces Monise Personalizados" />
-            <h3>Doce 03</h3>
-            <p>Lorem ipsum dolor amet, consetec adipiscing elit. magna</p>
-            </div>
-            <div class="doces swiper-slide">
-            <img src="assets/img/doce01.png" alt="Doces Monise Personalizados" />
-            <h3>Doce 03</h3>
-            <p>Lorem ipsum dolor amet, consetec adipiscing elit. magna</p>
-            </div>
-            <div class="doces swiper-slide">
-            <img src="assets/img/doce01.png" alt="Doces Monise Personalizados" />
-            <h3>Doce 03</h3>
-            <p>Lorem ipsum dolor amet, consetec adipiscing elit. magna</p>
-            </div>
+        <div class="swiper-wrapper" id="docesVitrine">
+            
         </div>
         <div class="swiper-pagination"></div>
         </div>
