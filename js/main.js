@@ -9,7 +9,7 @@ function pegarUrl(url){
   request.send()
   return request.responseText
 }
-let data = pegarUrl("https://monisepersonalizados.000webhostapp.com/admin/lista-produto.php");
+let data = pegarUrl("#");
 let produtos = JSON.parse(data);
 
 $(document).ready(function(e){
