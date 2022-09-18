@@ -23,3 +23,6 @@
         </div>
     </article>
 </section>
+<section class="direitos">
+    <p>© Todos os direitos reservados Monise Personalizados - <span>Desenvolvido por <a href="https://www.linkedin.com/in/kiqv/" target="_blank">Kaique O.</a></span></p>
+</section>

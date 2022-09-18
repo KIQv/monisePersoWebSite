@@ -17,21 +17,12 @@
         <main>
             <?php require_once("conteudo/banner.php")?>
             <img id="fimBanner" src="assets/svg/faixaBranca01.svg" alt="Faixa Branca"/>
-            <?php require_once("conteudo/destaque.php")?>
+            <?php require_once("conteudo/contato.php")?>
             <img id="fimDestaque"src="assets/svg/faixaBranca02.svg" alt="Faixa Branca"/>
-            <?php require_once("conteudo/sobre.php")?>
-            <img id="fimSobre" src="assets/svg/faixaBranca03.svg" alt="Faixa Branca"/>
-            <?php require_once("conteudo/galeria.php")?>
-            <img id="fimGaleria" src="assets/svg/faixaBranca04.svg" alt="Faixa Branca"/>
-            <?php require_once("conteudo/info.php")?>
-            <img id="fimInfo" src="assets/svg/faixaBranca05.svg" alt="Faixa Branca"/>
             <?php require_once("conteudo/app.php")?>
             <img id="fimApp" src="assets/svg/faixaBranca06.svg" alt="Faixa Branca"/>
-            <?php require_once("conteudo/depoimento.php")?>
-            <img id="fimDepoimento" src="assets/svg/faixaBranca07.svg" alt="Faixa Branca"/>
             <?php require_once("conteudo/kits.php")?>
             <hr id="fimKits" />
-            <?php require_once("conteudo/newsletter.php")?>
         </main>
         <footer>
             <img id="fimNewsletter" src="assets/svg/faixaRodape.svg" alt="Faixa Rodape Monise Personalizados"/>
