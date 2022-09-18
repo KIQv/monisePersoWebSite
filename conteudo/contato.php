@@ -11,12 +11,12 @@
             <h4>Envie uma mensagem</h4>
             <form action="email.php" method="post">
                 <label>Nome</label>
-                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+                <input type="text" name="nome" placeholder="Digite seu nome" autocomplete="off" required>
                 <label>Email</label>
                 <input type="email" name="email" placeholder="monisepersonalizados@gmail.com" autocomplete="off" required>
                 <label>Mensagem</label>
-                <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
-                <button type="submit">Enviar</button>
+                <textarea name="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                <button class="btnForm" type="submit" value="ENVIAR">Enviar</button>
             </form>
         </div>
         <div class="contatoInfo">

@@ -42,7 +42,6 @@ if(isset($_POST['enviar']))
 
         $corpo = "Enviado pelo site:<br>
         Nome: ".$_POST['nome']."<br>
-        Tel: ".$_POST['tel']."<br>
         Email: ".$_POST['email']."<br>
         Mensagem:<br>".$_POST['mensagem'];
 
